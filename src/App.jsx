@@ -221,8 +221,13 @@ export default function App() {
           </div>
         </section>
         <section className="section" id="stack">
-          <div className="section-heading"><h2><span>03 —</span> stack</h2><span>This website</span></div>
-          <div className="tools"><span>React</span><span>JavaScript</span><span>CSS</span><span>Vite</span></div>
+          <div className="section-heading"><h2><span>03 —</span> stack</h2><span>Tools I work with</span></div>
+          <div className="stack-groups">
+            <div className="stack-group"><h3>Languages</h3><div className="tools"><span>JavaScript</span><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span><span>TypeScript</span></div></div>
+            <div className="stack-group"><h3>Libraries / Frameworks</h3><div className="tools"><span>Laravel</span><span>Vue.js</span><span>Bootstrap</span><span>jQuery</span><span>Express.js</span><span>Tailwind CSS</span><span>React</span><span>Mongoose</span></div></div>
+            <div className="stack-group"><h3>Databases</h3><div className="tools"><span>MySQL</span><span>Firebase</span><span>MongoDB</span></div></div>
+            <div className="stack-group"><h3>Technologies</h3><div className="tools"><span>Git</span><span>GitHub</span><span>Node.js</span><span>Docker</span><span>Postman</span><span>Stripe API</span><span>Groq (Llama AI)</span><span>Insomnia</span></div></div>
+          </div>
         </section>
         <GitHubActivity />
         <ContactSection />

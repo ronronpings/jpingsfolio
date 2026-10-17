@@ -149,6 +149,15 @@ h2 > span { color: #777780; }
 }
 .tools { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .tools span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 4px; color: #b6b6bf; font: 10px var(--mono); background: #121216; }
+.stack-groups { display: grid; gap: 24px; padding-top: 24px; }
+.stack-group { display: grid; grid-template-columns: 145px 1fr; gap: 20px; align-items: start; }
+.stack-group h3 { margin: 7px 0 0; color: var(--muted); font: 9px/1.6 var(--mono); text-transform: uppercase; letter-spacing: .6px; }
+.stack-group .tools { margin-top: 0; }
+[data-theme="light"] .tools span { background: #f3f3f5; color: #4d4d58; }
+@media (max-width: 480px) {
+  .stack-group { grid-template-columns: 1fr; gap: 8px; }
+  .stack-group h3 { margin-top: 0; }
+}
 .contact-placeholder { font: 11px var(--mono); color: var(--muted); }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px 0 36px; border-top: 1px solid var(--line); font: 10px var(--mono); color: #888892; }
 @media (max-width: 1050px) {
