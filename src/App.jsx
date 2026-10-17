@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { flushSync } from 'react-dom'
 import GitHubActivity from './components/GitHubActivity.jsx'
 import ContactSection from './components/ContactSection.jsx'
-import portrait from '../images/1b6ef1b6-e818-4e0d-9d47-d67a9e64e649.jpg'
+import portrait from '../images/pic2.jfif'
 import mysmsPreview from '../images/MYSMS-thumb.webp'
 import dsiPreview from '../images/DSI-thumb.webp'
 import skPreview from '../images/SK-thumb.webp'
@@ -136,7 +136,7 @@ export default function App() {
   return (
     <div className="page">
       <header>
-        <a className="wordmark" href="#top">Ron</a>
+        <a className="wordmark" href="#top">Airon</a>
         <p className="sidebar-caption">Personal portfolio</p>
         <nav aria-label="Main navigation">
           <a href="#top">Overview <span>↗</span></a>
@@ -158,8 +158,8 @@ export default function App() {
         <section className="intro" id="top">
           <div className="portrait"><img src={portrait} alt="Ron" width="354" height="330" fetchPriority="high" /></div>
           <div className="intro-copy">
-          <h1>Ron</h1>
-           <p className="intro-text">I’m a full-stack developer building web applications with Laravel, React, and Vue.js—from responsive interfaces to reliable backend systems.</p>
+          <h1>Airon</h1>
+           <p className="intro-text">I’m a full-stack developer building web applications with Laravel, React, and Vue.js from responsive interfaces to reliable backend systems.</p>
            <p className="intro-detail">I turn complex workflows into practical tools, with a focus on scalable architecture, maintainable code, and the people who use them.</p>
            <div className="intro-links">
              <a href="https://github.com/ronronpings" target="_blank" rel="noreferrer">github ↗</a>
@@ -232,7 +232,7 @@ export default function App() {
         <GitHubActivity />
         <ContactSection />
       </main>
-      <footer><span>© {new Date().getFullYear()} Ron</span><a href="#top">Back to top ↑</a></footer>
+      <footer><span>© {new Date().getFullYear()} Airon</span><a href="#top">Back to top ↑</a></footer>
     </div>
   )
 }
