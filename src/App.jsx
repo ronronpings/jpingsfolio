@@ -196,7 +196,6 @@ export default function App() {
                   <p>{project.description}</p>
                   <div className="project-tile-footer">
                     <div><small>{project.note || 'Details coming soon'}</small>{project.location && <small className="project-location">⌖ {project.location}</small>}</div>
-                    <span aria-hidden="true">↗</span>
                   </div>
                 </article>
               )
