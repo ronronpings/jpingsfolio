@@ -224,11 +224,19 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px
   .tile-right { transform: translateX(calc(-50% + 75px)) translateY(24px) rotate(12deg) scale(.85); }
 }
 @media (max-width: 600px) {
-  .project-deck { height: auto; display: grid; gap: 16px; margin-top: 8px; }
-  .project-tile { position: static; width: 100%; min-height: 0; transform: none; opacity: 1; box-shadow: none; }
-  .tile-hidden { pointer-events: auto; }
+  .project-deck {
+    height: 390px;
+    margin: 8px calc(50% - 50vw) 0;
+    overflow: hidden;
+  }
+  .project-tile {
+    top: 22px;
+    width: clamp(250px, calc(100vw - 100px), 300px);
+    min-height: 320px;
+  }
+  .tile-left { transform: translateX(calc(-50% - clamp(95px, 30vw, 125px))) translateY(32px) rotate(-16deg) scale(.87); }
+  .tile-right { transform: translateX(calc(-50% + clamp(95px, 30vw, 125px))) translateY(24px) rotate(14deg) scale(.87); }
   .project-picker { display: none; }
-  .card-select { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .project-tile { transition: none; } }
 
